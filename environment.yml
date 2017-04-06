@@ -1,0 +1,65 @@
+name: pollen2
+channels:
+#  - defaults
+#  - conda-forge
+  - soumith
+dependencies:
+- python=3
+
+# Bare necessities
+- flake8
+- cython
+- pandas
+- numba
+- seaborn
+- jupyter
+- notebook < 5
+
+# HTML
+- lxml
+- beautifulsoup4
+- requests
+- html5lib
+
+# ML
+- pytorch
+- scikit-learn
+# - torchvision
+# - gensim  # =0.12.4
+
+- joblib
+- bcolz
+
+#- pymc3
+- pip:
+  - toolz
+  - pytest
+  - feather-format  # export MACOSX_DEPLOYMENT_TARGET=10.10
+  - line-profiler
+  - jupyter_contrib_nbextensions
+
+  # DL
+  # - keras
+  # - chainer
+
+  # HTML
+  - requests_cache
+  - redis
+  - pandas_datareader
+  # - grequests
+
+  # TS
+  # - tsfresh
+  # - pyflux
+
+  # - parsec
+  # - "ipython[notebook]<4"
+  # - snakeviz
+  # - pygraphviz
+  # - fuzzywuzzy
+  # - voluptuous
+
+  # - aiohttp
+
+  # - pystan
+  # - '--process-dependency-links git+https://github.com/pymc-devs/pymc3'
